@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E.M. Forster</title>
+        <link rel="icon" type="image/png" href="Logo.png">
+    </head>
+    <body>
+        <style>
+            h1 {
+                align-items: center;
+                margin: auto;
+                height: 1%;
+                display: flex;
+                justify-content: center;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            h2, p {
+                align-items: center;
+                margin-top: auto;
+                height: 20%;
+                display: flex;
+                justify-content: center;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            p {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            button {
+                border: 5px;
+                border-radius: 35px;
+                padding: 35px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 45px;
+                margin: 5%;
+                cursor: pointer;
+            }
+            button:active {
+                transform: scale(1.05);
+                transition: 100ms ease-in-out;
+            }
+            .E {
+                background-color: rgb(0, 255, 128);
+            }
+            .E:active{
+                background-color: rgb(51, 194, 51);
+            }
+            .B {
+                background-color: rgb(0, 238, 255);
+            }
+            .B:active{
+                background-color: rgb(0, 196, 236);
+            }
+            .F {
+                background-color: rgb(255, 0, 0);
+            }
+            .F:active{
+                background-color: rgb(196, 0, 0);
+            }
+            div {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            table {
+                width: 92%;
+                border-collapse: separate;
+                border-spacing: 25px 10px; 
+            }
+            th {
+                padding: 10px;
+                width: 20%;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            td {
+                height: fit-content;
+                text-align: center;
+                vertical-align: middle;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                font-size: 100%;
+            }
+            img {
+                padding: 2%;
+            }
+            .small {
+                font-size: x-small;
+            }
+            .arrow {
+                cursor: pointer;
+                margin: 50px;
+                justify-content: center;
+                align-items: center;
+            }
+            .facts {
+                border-spacing: 1% 10px; 
+            }
+        </style>
+        <h1 id="Title">About the author</h1>
+        <div class="buttons">
+            <button id="Early"; class="E">Life story</button>
+            <button id="Books"; class="B">Books</button>
+            <button id="Facts"; class="F">Facts</button>
+        </div>
+        <div id="Display">
+        </div>
+        <div id="Image">
+        </div>
+        <div id="Table">
+        </div>
+        <div id="Info">
+        </div>
+        <div id="Line_2">
+        </div>
+        <div id="Line_3">
+        </div>
+        <div class="arrow" id="up-arrow">
+            <img src="up-arrow.png" height="30">
+        </div>
+        <script>
+            const early = document.getElementById("Early");
+            const books = document.getElementById("Books");
+            const facts = document.getElementById("Facts");
+            const display = document.getElementById("Display");
+            const table = document.getElementById("Table");
+            const image = document.getElementById("Image");
+            const info = document.getElementById("Info");
+            const line_2 = document.getElementById("Line_2");
+            const line_3 = document.getElementById("Line_3");
+            const arrow = document.getElementById("up-arrow");
+            function showEarly() {
+                display.innerHTML = "<h2>Life Story<h2>"
+                table.innerHTML = ""
+                let infoHTML = "<p>Edward Morgan Forster was born in 1879 in London. He was supposed to be called Henry but he was accidentially baptised as Edward. His dad died before he turned 2 years old. He was educated in Tonbridge School where he studied History and Classics. He was raised by his mother and other relatives. He then went to King's College, Camberidge. He lived with his mum from 1925-1945 (until she died).</p>"
+                info.innerHTML = infoHTML
+                line_2.innerHTML = "<p>He published many books in the early 1900s. One of his books - Howards End - was based on where he lived. His novels frequently included class divisions and cultural misunderstandings. His book Maurice wasn't published until after he died because it contained same-sex love which was illegal at the time. He travelled a lot and his trip to India inspired him to write his most famous book - A Pasage to India.</p>"
+                line_3.innerHTML = "<p>He went on to become a respected broadcaster and wrote many short stories, including The Machine Stops. His stories usually told people to connect with other people outside their class. He was awarded an Order of Merit for his outstandind contribution to literature in 1969, on his 90th birthday. He passed away a year later, in 1971.</p>"
+                image.innerHTML = `<img src="EM_Forster1.png" width=20%>`
+            };
+            function showBooks() {
+                display.innerHTML = "<h2>Famous books</h2><br>"
+                image.innerHTML = ""
+                let tableHTML = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Book</th>
+                            <th>Photo</th>
+                            <th>Plublished</th>
+                            <th>Length</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A Passage to India</td>
+                            <td><img src="A_passage_to_India.png" width=80%></td>
+                            <td>4/6/1924</td>
+                            <td>416 pages</td>
+                        </tr>
+                        <tr>
+                            <td>A Room With a View</td>
+                            <td><img src="A-Room_with_a_view.jpg" width=80%></td>
+                            <td>22/10/1909</td>
+                            <td>256 pages</td>
+                        </tr>
+                        <tr>
+                            <td>Maurice</td>
+                            <td><img src="Maurice.png" width=80%></td>
+                            <td>7/10/1971</td>
+                            <td>272 pages</td>
+                        </tr>
+                        <tr>
+                            <td>Howards End</td>
+                            <td><img src="Howards_End.jpg" width=80%></td>
+                            <td>18/10/1910</td>
+                            <td>336 pages</td>
+                        </tr>
+                        <tr>
+                            <td>Where Angels Fear to Tread</td>
+                            <td><img src="Forster-Angels.jpg" width=80%></td>
+                            <td>??/8/1905</td>
+                            <td>319 pages</td>
+                        </tr>
+                        <tr>
+                            <td>The Longest Journey</td>
+                            <td><img src="The_longest_journey.jpg" width=80%></td>
+                            <td>??/4/1907</td>
+                            <td>360 pages</td>
+                        </tr>
+                    </tbody>
+                </table>
+            `
+            table.innerHTML = tableHTML
+            info.innerHTML = ""
+            line_2.innerHTML = ""
+            line_3.innerHTML = ""
+            };
+            function showFacts() {
+                display.innerHTML = "<h2>Facts</h2>"
+                table.innerHTML = `
+                <table class="facts">
+                    <thead>
+                        <tr>
+                            <th>Fact No.</th>
+                            <th>Fact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>His full name is Edward Morgan Forster</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>He declined a knighthood in 1949</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>He was nominated for the Nobel Prize in Literature 22 seperate years</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Some of his books were made into films</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>His house on Howards end is a Grade 1 listed building</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>He co-authored the opera <i>Billy Budd</i></td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>He wrote essays, speaches, stories and broadcasts</td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td>He 6 novels and 2 collections of short stories</td>
+                        </tr>
+                    </tbody>
+                </table>`
+                info.innerHTML = ""
+                image.innerHTML = `<img src="EM_Forster2.jpg" width=30%>`
+                line_2.innerHTML = ""
+                line_3.innerHTML = ""
+            };
+            function scrollToTop() {
+                document.getElementById('Title').scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }
+            early.addEventListener('click', showEarly);
+            books.addEventListener('click', showBooks);
+            facts.addEventListener('click', showFacts);
+            arrow.addEventListener('click', scrollToTop);
+        </script>
+    </body>
+    <footer>
+        <p class="small">&copy; English Project on E.M. Forster 2026 &copy;</p>
+    </footer>
+</html>
