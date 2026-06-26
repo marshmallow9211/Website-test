@@ -8,6 +8,35 @@
     </head>
     <body>
         <style>
+            #loader {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background-color: #121212;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                transition: opacity 0.5s ease, visibility 0.5s ease;
+            }
+            .spinner {
+                width: 50px;
+                height: 50px;
+                border: 5px solid #333;
+                border-top: 5px solid #007bff;
+                border-radius: 50%;
+                animation: spin 1s linear infinite;
+            }
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+            #main-content {
+                opacity: 0;
+                transition: opacity 0.5s ease;
+            }
             h1 {
                 align-items: center;
                 margin: auto;
@@ -28,7 +57,7 @@
                 margin-left: 5%;
                 margin-right: 5%;
             }
-            div {
+            .center {
                 align-items: center;
                 justify-content: center;
                 display: flex;
@@ -38,6 +67,15 @@
                 margin: 50px;
                 justify-content: center;
                 align-items: center;
+            }
+            a {
+                align-items: center;
+                margin: 4%;
+                height: 20%;
+                display: flex;
+                justify-content: center;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: rgb(0, 196, 236);
             }
             button {
                 border: 5px;
@@ -79,49 +117,77 @@
             .small {
                 font-size: x-small;
             }
-            a {
-                align-items: center;
-                margin: 4%;
-                height: 20%;
-                display: flex;
-                justify-content: center;
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                color: rgb(0, 196, 236);
-            }
         </style>
-        <h1 id="Title">The Machine Stops Context</h1>
-        <br>
-        <div>
-            <h2>Types of context:</h2>
+        <div id="loader">
+            <div class="spinner"></div>
         </div>
-        <div>
-            <button id="Books" class="b">Other Books</button>
-            <button id="Things" class="t">Historical</button>
-            <button id="Social" class="s">Social</button>
-            <button id="Religion" class="r">Religious</button>
-        </div>
-        <div class="arrow" id="up-arrow">
-            <img src="up-arrow.png" height="30">
-        </div>
-        <script>
-            const arrow = document.getElementById("up-arrow");
-
-            function scrollToTop() {
-                document.getElementById('Title').scrollIntoView({ behavior: 'smooth', block: 'start' })
-            }
-            arrow.addEventListener('click', scrollToTop);
-        </script>
-    </body>
-    <footer>
-        <div>
-            <a href="index.html">
-                <h6>About the author</h6>
-            </a>
+        <div id="main-content">
+            <h1 id="Title">The Machine Stops Context</h1>
             <br>
-            <a href="Guide.html">
-                <h6>Interactive guide</h6>
-            </a>
-        </div>
-        <p class="small">English Project on E.M. Forster 2026</p>
-    </footer>
-</html>
+            <div class="center">
+                <h2>Types of context:</h2>
+            </div>
+            <div class="center">
+                <button id="Books" class="b">Other Books</button>
+                <button id="Things" class="t">Historical</button>
+                <button id="Social" class="s">Social</button>
+                <button id="Religion" class="r">Religious</button>
+            </div>
+            <div class="arrow center" id="up-arrow">
+                <img src="up-arrow.png" height="30">
+            </div>
+            <script>
+                const arrow = document.getElementById("up-arrow");
+
+                function scrollToTop() {
+                    document.getElementById('Title').scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+                arrow.addEventListener('click', scrollToTop);
+            </script>
+        </body>
+        <footer>
+            <div class="center">
+                <a href="index.html">
+                    <h6>About the author</h6>
+                </a>
+                <br>
+                <a href="Guide.html">
+                    <h6>Interactive guide</h6>
+                </a>
+            </div>
+            <p class="small">English Project on E.M. Forster 2026</p>
+        </footer>
+    </div>
+    <script>
+            const imagesToPreload = [
+            'up-arrow.png'
+            ];
+
+            let loadedCount = 0;
+            const totalImages = imagesToPreload.length;
+            function revealSite() {
+                const loader = document.getElementById('loader');
+                const content = document.getElementById('main-content');
+                
+                loader.style.opacity = '0';
+                loader.style.visibility = 'hidden';
+                content.style.opacity = '1';
+            }
+            if (totalImages === 0) {
+            revealSite();
+            } else {
+            imagesToPreload.forEach(url => {
+                const img = new Image();
+                img.onload = handleImageLoad;
+                img.onerror = handleImageLoad; 
+                
+                img.src = url;
+            });
+            }
+            function handleImageLoad() {
+            loadedCount++;
+            if (loadedCount === totalImages) {
+                revealSite();
+            }
+            }
+    </script>
