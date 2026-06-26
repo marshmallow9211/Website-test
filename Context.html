@@ -46,11 +46,7 @@
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
             h2, p {
-                align-items: center;
-                margin-top: auto;
-                height: 20%;
-                display: flex;
-                justify-content: center;
+                text-align: center;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             }
             p {
@@ -129,20 +125,52 @@
             </div>
             <div class="center">
                 <button id="Books" class="b">Other Books</button>
-                <button id="Things" class="t">Historical</button>
+                <button id="Things" class="t">Events</button>
                 <button id="Social" class="s">Social</button>
                 <button id="Religion" class="r">Religious</button>
+            </div>
+            <div class="center" id="subtitle">
+                <h2>Other Books</h2>
+            </div>
+            <div class="center" id="info1">
+                <p>One of the main books that influenced the writing of E.M. Forster's <i>The Machine Stops</i> was <i>A Modern Utopia</i> by HG Wells. In this book, 2 travellers are teleported to a utopian future. This utopia is controlled by one government who ensure that peace is kept. Rules are enforced by <i>Samurai</i>. Drugs and alcohol are banned. People enjoy a lot of personal time but they are required to take an annual week-long ramble in the wilderness. Men and women are equal. All poverty and inequality is gone. Everyone has access to education and healthcare. Machines are improving daily to increase the productivity of work. Wells compares the utopia to 20th century life. He explains that no world can be perfect, but we can keep improving it.</p>
+            </div>
+            <div class="center" id="img">
+                <img src="a_modern_utopia.jpg" width=15%>
+            </div>
+            <div id="info2">
+                <p>4 years after <i>A Modern Utopia</i> was published, </p>
             </div>
             <div class="arrow center" id="up-arrow">
                 <img src="up-arrow.png" height="30">
             </div>
             <script>
                 const arrow = document.getElementById("up-arrow");
+                const books = document.getElementById("Books");
+                const events = document.getElementById("Things");
+                const social = document.getElementById("Social");
+                const religion = document.getElementById("Religion");
 
                 function scrollToTop() {
-                    document.getElementById('Title').scrollIntoView({ behavior: 'smooth', block: 'start' })
+                    document.getElementById('Title').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+                function showBooks() {
+
+                }
+                function showEvents() {
+
+                }
+                function showSocial() {
+
+                }
+                function showReligion() {
+
                 }
                 arrow.addEventListener('click', scrollToTop);
+                books.addEventListener('click', showBooks);
+                events.addEventListener('click', showEvents);
+                social.addEventListener('click', showSocial);
+                religion.addEventListener('click', showReligion);
             </script>
         </body>
         <footer>
@@ -160,7 +188,8 @@
     </div>
     <script>
             const imagesToPreload = [
-            'up-arrow.png'
+            'up-arrow.png',
+            'a_modern_utopia.jpg'
             ];
 
             let loadedCount = 0;
@@ -191,3 +220,4 @@
             }
             }
     </script>
+</html>
