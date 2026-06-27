@@ -113,6 +113,33 @@
             .small {
                 font-size: x-small;
             }
+            @media only screen and (min-width: 0px) {
+                button {
+                    font-size: 20px;
+                    padding: 2%;
+                    margin: 1%;
+                }
+            }
+            @media only screen and (min-width: 950px) {
+                button {
+                    font-size: 35px;
+                    padding: 5%;
+                    margin: 3%;
+                }
+            }
+            @media only screen and (min-width: 2000px) {
+                button {
+                    font-size: 60px;
+                    padding: 5%;
+                    margin: 3%;
+                }
+            }
+            @media only screen and (prefers-color-scheme: dark) {
+                body {
+                    background-color: #1b1b1b;
+                    color: #ffffff;
+                }
+            }
         </style>
         <div id="loader">
             <div class="spinner"></div>
