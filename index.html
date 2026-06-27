@@ -33,6 +33,12 @@
                 0% { transform: rotate(0deg); }
                 100% { transform: rotate(360deg); }
             }
+            @media only screen and (prefers-color-scheme: dark) {
+                body {
+                    background-color: #1b1b1b;
+                    color: #ffffff;
+                }
+            }
             #main-content {
                 opacity: 0;
                 transition: opacity 0.5s ease;
@@ -130,6 +136,27 @@
             }
             .facts {
                 border-spacing: 1% 10px; 
+            }
+            @media only screen and (min-width: 0px) {
+                button {
+                    font-size: 30px;
+                    padding: 2%;
+                    margin: 1%;
+                }
+            }
+            @media only screen and (min-width: 768px) {
+                button {
+                    font-size: 45px;
+                    padding: 5%;
+                    margin: 3%;
+                }
+            }
+            @media only screen and (min-width: 2000px) {
+                button {
+                    font-size: 100px;
+                    padding: 5%;
+                    margin: 3%;
+                }
             }
         </style>
         <div id="loader">
