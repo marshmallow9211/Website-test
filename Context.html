@@ -157,16 +157,16 @@
                 <button id="Religion" class="r">Religious</button>
             </div>
             <div class="center" id="subtitle">
-                <h2>Other Books</h2>
+                <h2></h2>
             </div>
             <div class="center" id="info1">
-                <p>One of the main books that influenced the writing of E.M. Forster's <i>The Machine Stops</i> was <i>A Modern Utopia</i> by HG Wells. In this book, 2 travellers are teleported to a utopian future. This utopia is controlled by one government who ensure that peace is kept. Rules are enforced by <i>Samurai</i>. Drugs and alcohol are banned. People enjoy a lot of personal time but they are required to take an annual week-long ramble in the wilderness. Men and women are equal. All poverty and inequality is gone. Everyone has access to education and healthcare. Machines are improving daily to increase the productivity of work. Wells compares the utopia to 20th century life. He explains that no world can be perfect, but we can keep improving it.</p>
+                <p></p>
             </div>
             <div class="center" id="img">
-                <img src="a_modern_utopia.jpg" width=15%>
+                <img src="" width=15%>
             </div>
             <div id="info2">
-                <p>4 years after <i>A Modern Utopia</i> was published, </p>
+                <p></p>
             </div>
             <div class="arrow center" id="up-arrow">
                 <img src="up-arrow.png" height="30">
@@ -177,21 +177,38 @@
                 const events = document.getElementById("Things");
                 const social = document.getElementById("Social");
                 const religion = document.getElementById("Religion");
+                const subtitle = document.getElementById("subtitle");
+                const info1 = document.getElementById("info1");
+                const img = document.getElementById("img");
+                const info2 = document.getElementById("info2");
 
                 function scrollToTop() {
                     document.getElementById('Title').scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
-                function showBooks() {
-
-                }
                 function showEvents() {
+                    subtitle.innerHTML = "<h2>Events</h2>"
+                    info1.innerHTML = "<p>One of the main events which influenced <i>The Machine Stops</i> was the <i>Second Industrial Revolution</i>, also known as the Technological Revolution. It included massive developments in technology and mass production as well as new inventions like the telegraph. It also included the use of electricity. These changes inspired Forster to write <i>The Machine Stops</i> for many different reasons. One of these was communication. In the book, all communication is done through the Machine. People prefer to communicate over long distances rather than meeting in person. This relates to the invention of the telegraph and early telephones. It was a easier to send someone a telegraph than to meet them in person, thus cutting off the physical connection between people.</p>"
+                    img.innerHTML = `<img src="Telegram.png" width=15%>`
+                    info2.innerHTML = "<p>Another event that influenced <i>The Machine Stops</i> was the develpoment of new technology. This meant that people relied more on technology. One example is the use of electricity. If the electricity grid fails, people would be unable to do things that they previously could do. In <i>The Machine Stops</i>, this is shown when the Machine fails. As people had become so dependent on the Machine, they could not survive without it. Another event that influenced the book was mass labour. As more factories were built, workers came to large cities to work. Forster thought that more machines means more labour. He thought that the machines that were supposed to liberate people from work were actually making more people work. He thought that tech was enslavement. this is shown in the book in many ways. One of these ways is through fear of Homelessness. People are told that they can not survive on the surface of the Earth, so they will do anything to stay underground, with the Machine. This means that the Machine can make them do whatever it wants them to do.</p>"
+                }
+                function showBooks() {
+                    subtitle.innerHTML = "<h2>Other Books</h2>"
+                    info1.innerHTML = "<p>One of the main books that influenced the writing of E.M. Forster's <i>The Machine Stops</i> was <i>A Modern Utopia</i> by HG Wells. In this book, 2 travellers are transported to a utopian future. This utopia is controlled by one government who ensure that peace is kept. Rules are enforced by <i>Samurai</i>. Drugs and alcohol are banned. People enjoy a lot of personal time but they are required to take an annual week-long ramble in the wilderness. Men and women are equal. All poverty and inequality is gone. Everyone has access to education and healthcare. Machines are improving daily to increase the productivity of work. Wells compares the utopia to 20th century life. He explains that no world can be perfect, but we can keep improving it.</p>"
+                    img.innerHTML = `<img src="a_modern_utopia.jpg" width=15%>`
+                    info2.innerHTML = "<p>4 years after <i>A Modern Utopia</i> was published, EM Forster wrote <i>The Machine Stops</i>. He thought that <i>A Modern Utopia</i> would actually be horrible. He reasoned that in a world where humans do not have to do anything, everyone would become lumps of flesh which do not have any idea how to do anything. In <i>The Machine Stops</i>, no one needs to travel, because all of the rooms are exactly the same. They also don't have to travel because everyone can be connected through the Machine. Forster also thought that because the Machine would get rid of all creativity as everything is done exactly the same every time. In addition, if the machine was so reliable, then people would not know how to fix it when it breaks down.</p>"
 
                 }
                 function showSocial() {
-
+                    subtitle.innerHTML = "<h2>Social</h2>"
+                    info1.innerHTML = "<p>One of the main social events that influenced <i>The Machine Stops</i> was the publication of <i>The Futurist Movement</i> by Filippo Marinetti. This movement included lots of different ideas. One of these was the destruction of nature. Marinetti thought that we should live in a world full of machines. Forster counters this in <i>The Machine Stops</i>. Everyone lives underground, in hexagonal cells, cut of from nature. This meant that they cannot appreciate the beauty of the outside world. In addition, people view the surface as a hostile place as they never experiance it and they are told that they will die if they go there. This disconnection from the outside world also limits curiosity as no one is thinking about how things work because everything is done by the Machine.</p>"
+                    img.innerHTML = `<img src="nature.jpg" width=15%>`
+                    info2.innerHTML = "<p>Another idea from <i>The Futurist Movement</i> was that we should make things quicker. He says that we should all get fast cars and aeroplanes. Forster thinks that speed ruins things. In <i>The Machine Stops</i>, people use fast airships to get around. This means that they don't take the time to look at the lovely nature around them. All they care about is getting from point A to point B as quickly as possible. Marinetti also says that humans should merge with technology to overcome biological barriers like emotions and strength. Forster counters this in <i>The Machine Stops</i> by showing that instead of making humans stronger, it makes the weaker. People become used to not having to do anything because the Machine does it all for them. This means that they become weak and don't know how to do anything.</p>"
                 }
                 function showReligion() {
-
+                    subtitle.innerHTML = "<h2>Religion</h2>"
+                    info1.innerHTML = "<p>Forster was a humanist, which meant that he believed that humans should be seperate from machines. This meant that he thought that people were starting to treat machines as miracles. This is shown in <i>The Machine Stops</i> when people begin to forget that humans built the Machine and start worshipping it. They think of it as an omnipotent god, which cannot be destroyed. This meant that people did not recognise that the Machine was actually failing, they just thought it was a test of faith. This also relates to the Bible. In the Bible, it says that idols are meaningless and will not protect you in times of need. In <i>The Machine Stops</i>, the Machine starts to break down. People pray to the Machine, hoping that it would fix itself, and that it was just a a test of faith. If people had realised that the Machine was not a god, then they would have fixed it. </p>"
+                    img.innerHTML = `<img src="bible.jpg" width=12%>`
+                    info2.innerHTML = "<p>Another reference to religion in <i>The Machine Stops</i> is the idea of \"Heaven\" and \"Hell\". Usually, Heaven is above and Hell is below, but in <i>The Machine Stops</i> Hell is above and Heaven is below, according to the people living below. They think that life with the Machine is the best place to be and that the surface is a hostile environment when in reality the surface is the better place. <i>The Machine Stops</i> also includes ideas of sin and punishment. Sin is represented as doing things that the Machine doesn't want you to do, like walking on the surface or criticize the Machine. Punishment is represented as Homelessness, which is the equivalent of being sent to hell.</p>"
                 }
                 arrow.addEventListener('click', scrollToTop);
                 books.addEventListener('click', showBooks);
@@ -203,11 +220,11 @@
         <footer>
             <div class="center">
                 <a href="index.html">
-                    <h6>About the author</h6>
+                    <h3>About the author</h3>
                 </a>
                 <br>
                 <a href="Guide.html">
-                    <h6>Interactive guide</h6>
+                    <h3>Interactive guide</h3>
                 </a>
             </div>
             <p class="small">English Project on E.M. Forster 2026</p>
@@ -216,14 +233,17 @@
     <script>
             const imagesToPreload = [
             'up-arrow.png',
-            'a_modern_utopia.jpg'
+            'a_modern_utopia.jpg',
+            'telegram.png',
+            'nature.jpg',
+            'bible.jpg'
             ];
 
             let loadedCount = 0;
             const totalImages = imagesToPreload.length;
             function revealSite() {
-                const loader = document.getElementById('loader');
-                const content = document.getElementById('main-content');
+                const loader = document.getElementById("loader");
+                const content = document.getElementById("main-content");
                 
                 loader.style.opacity = '0';
                 loader.style.visibility = 'hidden';
