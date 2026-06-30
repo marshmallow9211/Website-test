@@ -99,6 +99,16 @@
             .F:active{
                 background-color: rgb(196, 0, 0);
             }
+            .C:active{
+                background-color: rgb(106, 0, 182);
+            }
+            .Q {
+                background-color: rgb(255, 166, 0);
+                font-size: 25px;
+            }
+            .Q:active {
+                background-color: rgb(201, 131, 0);
+            }
             .center {
                 align-items: center;
                 justify-content: center;
@@ -158,6 +168,36 @@
                     margin: 3%;
                 }
             }
+            @media only screen and (min-width: 0px) {
+                .Q, .C {
+                    font-size: 30px;
+                    padding: 2%;
+                    margin: 1%;
+                }
+                .C {
+                    padding: 9%;
+                }
+            }
+            @media only screen and (min-width: 768px) {
+                .Q, .C {
+                    font-size: 45px;
+                    padding: 5%;
+                    margin: 3%;
+                }
+                .C {
+                    padding: 10%;
+                }
+            }
+            @media only screen and (min-width: 2000px) {
+                .Q, .C {
+                    font-size: 100px;
+                    padding: 5%;
+                    margin: 3%;
+                }
+                .C {
+                    padding: 10%;
+                }
+            }
         </style>
         <div id="loader">
             <div class="spinner"></div>
@@ -181,6 +221,8 @@
             </div>
             <div class="center" id="Line_3">
             </div>
+            <div id="button">
+            </div>
             <div class="center arrow" id="up-arrow">
                 <img src="up-arrow.png" height="30">
             </div>
@@ -196,6 +238,7 @@
             const line_2 = document.getElementById("Line_2");
             const line_3 = document.getElementById("Line_3");
             const arrow = document.getElementById("up-arrow");
+            const button = document.getElementById("button");
             function showEarly() {
                 display.innerHTML = "<h2>Life Story<h2>"
                 table.innerHTML = ""
@@ -204,6 +247,7 @@
                 line_2.innerHTML = "<p>He published many books in the early 1900s. One of his books - <i>Howards End</i> - was based on where he lived. His novels frequently included class divisions and cultural misunderstandings. His book <i>Maurice</i> wasn't published until after he died because it contained same-sex love which was illegal at the time. He travelled a lot and his trip to India inspired him to write his most famous book - <i>A Pasage to India</i>.</p>"
                 line_3.innerHTML = "<p>He went on to become a respected broadcaster and wrote many short stories, including <i>The Machine Stops</i>. His stories usually told people to connect with other people outside their class. He was awarded an <i>Order of Merit</i> for his outstandind contribution to literature in 1969, on his 90th birthday. He passed away a year later, in 1970.</p>"
                 image.innerHTML = `<img src="EM_Forster1.png" width=20%>`
+                button.innerHTML = `<a href="quiz.html"><button class="Q">Try the quiz!</button></a>`
             };
             function showBooks() {
                 display.innerHTML = "<h2>Famous books</h2><br>"
@@ -262,6 +306,7 @@
             info.innerHTML = ""
             line_2.innerHTML = ""
             line_3.innerHTML = ""
+            button.innerHTML = ""
             };
             function showFacts() {
                 display.innerHTML = "<h2>Facts</h2>"
@@ -312,6 +357,7 @@
                 image.innerHTML = `<img src="EM_Forster2.jpg" width=30%>`
                 line_2.innerHTML = ""
                 line_3.innerHTML = ""
+                button.innerHTML = ""
             };
             function scrollToTop() {
                 document.getElementById('Title').scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -325,11 +371,7 @@
     <footer>
         <div class="center">
             <a href="Context.html">
-                <h4>Context</h4>
-            </a>
-            <br>
-            <a href="Guide.html">
-                <h4>Interactive Guide</h4>
+                <button class="C">Context</button>
             </a>
         </div>
         <p class="small">English Project on E.M. Forster 2026</p>
