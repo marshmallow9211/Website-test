@@ -65,6 +65,14 @@
             transition: 100ms ease-in-out;
             background-color: rgb(51, 194, 51)
         }
+        .B {
+            background-color: rgb(149, 0, 255);
+            font-size: 25px;
+            padding: 3%;
+            }
+        .B:active{
+            background-color: rgb(106, 0, 182);
+        }
     </style>
 </head>
 <body>
@@ -73,32 +81,33 @@
     <h3 id="percent"></h3>
     <h3 id="feedback"></h3>
     <form>
+    <form>
     <div class="question center">
         <h2>Question 1:</h2>
         <h3>Where was Forster born?</h3>
 
         <label class="answer">
-            <input type="radio" id="Cambridge" name="1">
+            <input type="radio" id="cam" name="1">
             <span>Cambridge</span>
-            <img id="1-1img" src="" width="17">
+            <img id="one_one" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="London" name="1">
+            <input type="radio" id="lon" name="1">
             <span>London</span>
-            <img id="1-2img" src="" width="17">
+            <img id="one_two" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="Manchester" name="1">
+            <input type="radio" id="man" name="1">
             <span>Manchester</span>
-            <img id="1-3img" src="" width="17">
+            <img id="one_three" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="Oxford" name="1">
+            <input type="radio" id="oxf" name="1">
             <span>Oxford</span>
-            <img id="1-4img" src="" width="17">
+            <img id="one_four" src="" width="17">
         </label>
     </div><br><br>
 
@@ -107,27 +116,27 @@
         <h3>When did Forster die?</h3>
 
         <label class="answer">
-            <input type="radio" id="60" name="2">
+            <input type="radio" id="six" name="2">
             <span>1960</span>
-            <img id="2-1img" src="" width="17">
+            <img id="two_one" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="66" name="2">
+            <input type="radio" id="sixs" name="2">
             <span>1966</span>
-            <img id="2-2img" src="" width="17">
+            <img id="two_two" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="70" name="2">
+            <input type="radio" id="sev" name="2">
             <span>1970</span>
-            <img id="2-3img" src="" width="17">
+            <img id="two_three" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="71" name="2">
+            <input type="radio" id="svnty" name="2">
             <span>1971</span>
-            <img id="2-4img" src="" width="17">
+            <img id="two_four" src="" width="17">
         </label>
     </div><br><br>
 
@@ -136,27 +145,27 @@
         <h3>Which university did Forster go to?</h3>
 
         <label class="answer">
-            <input type="radio" id="King" name="3">
+            <input type="radio" id="king" name="3">
             <span>King's College, Cambridge</span>
-            <img id="3-1img" src="" width="17">
+            <img id="three_one" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="Ox" name="3">
+            <input type="radio" id="ox" name="3">
             <span>Oxford University</span>
-            <img id="3-2img" src="" width="17">
+            <img id="three_two" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="Un" name="3">
+            <input type="radio" id="un" name="3">
             <span>University College London</span>
-            <img id="3-3img" src="" width="17">
+            <img id="three_three" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="War" name="3">
+            <input type="radio" id="war" name="3">
             <span>Warwick University</span>
-            <img id="3-4img" src="" width="17">
+            <img id="three_four" src="" width="17">
         </label>
     </div><br><br>
 
@@ -165,27 +174,27 @@
         <h3>What was Forster supposed to be called?</h3>
 
         <label class="answer">
-            <input type="radio" id="Geo" name="4">
+            <input type="radio" id="geo" name="4">
             <span>George</span>
-            <img id="4-1img" src="" width="17">
+            <img id="four_one" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="Ed" name="4">
+            <input type="radio" id="ed" name="4">
             <span>Edward</span>
-            <img id="4-2img" src="" width="17">
+            <img id="four_two" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="Hen" name="4">
+            <input type="radio" id="hen" name="4">
             <span>Henry</span>
-            <img id="4-3img" src="" width="17">
+            <img id="four_three" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="Will" name="4">
+            <input type="radio" id="wil" name="4">
             <span>William</span>
-            <img id="4-4img" src="" width="17">
+            <img id="four_four" src="" width="17">
         </label>
     </div><br><br>
 
@@ -194,27 +203,27 @@
         <h3>Which one of Forster's books was not published until after his death?</h3>
 
         <label class="answer">
-            <input type="radio" id="Ang" name="5">
+            <input type="radio" id="ang" name="5">
             <span>Where Angels Fear to Tread</span>
-            <img id="5-1img" src="" width="17">
+            <img id="five_one" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="Ind" name="5">
+            <input type="radio" id="ind" name="5">
             <span>A Passage to India</span>
-            <img id="5-2img" src="" width="17">
+            <img id="five_two" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="End" name="5">
+            <input type="radio" id="end" name="5">
             <span>Howards End</span>
-            <img id="5-3img" src="" width="17">
+            <img id="five_three" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="Mau" name="5">
+            <input type="radio" id="mau" name="5">
             <span>Maurice</span>
-            <img id="5-4img" src="" width="17">
+            <img id="five_four" src="" width="17">
         </label>
     </div><br><br>
 
@@ -225,25 +234,25 @@
         <label class="answer">
             <input type="radio" id="bro" name="6">
             <span>Broadcasting</span>
-            <img id="6-1img" src="" width="17">
+            <img id="six_one" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="pla" name="6">
             <span>Writing plays</span>
-            <img id="6-2img" src="" width="17">
+            <img id="six_two" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="spe" name="6">
             <span>Writing speeches</span>
-            <img id="6-3img" src="" width="17">
+            <img id="six_three" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="jou" name="6">
             <span>Journalism</span>
-            <img id="6-4img" src="" width="17">
+            <img id="six_four" src="" width="17">
         </label>
     </div><br><br>
 
@@ -254,25 +263,25 @@
         <label class="answer">
             <input type="radio" id="lit" name="7">
             <span>Nobel Prize in Literature</span>
-            <img id="7-1img" src="" width="17">
+            <img id="seven_one" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="mer" name="7">
             <span>Order of Merit</span>
-            <img id="7-2img" src="" width="17">
+            <img id="seven_two" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="boo" name="7">
             <span>Booker Prize</span>
-            <img id="7-3img" src="" width="17">
+            <img id="seven_three" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="int" name="7">
             <span>International Booker Prize</span>
-            <img id="7-4img" src="" width="17">
+            <img id="seven_four" src="" width="17">
         </label>
     </div><br><br>
 
@@ -283,25 +292,25 @@
         <label class="answer">
             <input type="radio" id="off" name="8">
             <span>Where Forster's publishing office was</span>
-            <img id="8-1img" src="" width="17">
+            <img id="eight_one" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="fri" name="8">
             <span>Where Forster's friend lived</span>
-            <img id="8-2img" src="" width="17">
+            <img id="eight_two" src="" width="17">
         </label><br>
 
         <label class="answer">
-            <input type="radio" id="for" name="8">
+            <input type="radio" id="fors" name="8">
             <span>Where Forster lived</span>
-            <img id="8-3img" src="" width="17">
+            <img id="eight_three" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="mum" name="8">
             <span>Where Forster's mother lived</span>
-            <img id="8-4img" src="" width="17">
+            <img id="eight_four" src="" width="17">
         </label>
     </div><br><br>
 
@@ -312,25 +321,25 @@
         <label class="answer">
             <input type="radio" id="cla" name="9">
             <span>History & Classics</span>
-            <img id="9-1img" src="" width="17">
+            <img id="nine_one" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="lan" name="9">
             <span>English Language & Classics</span>
-            <img id="9-2img" src="" width="17">
+            <img id="nine_two" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="rs" name="9">
             <span>English Literature & RS</span>
-            <img id="9-3img" src="" width="17">
+            <img id="nine_three" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="lite" name="9">
             <span>History & English Literature</span>
-            <img id="9-4img" src="" width="17">
+            <img id="nine_four" src="" width="17">
         </label>
     </div><br><br>
 
@@ -341,25 +350,25 @@
         <label class="answer">
             <input type="radio" id="vie" name="10">
             <span>A Room With a View</span>
-            <img id="10-1img" src="" width="17">
+            <img id="ten_one" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="maur" name="10">
             <span>Maurice</span>
-            <img id="10-2img" src="" width="17">
+            <img id="ten_two" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="how" name="10">
             <span>Howards End</span>
-            <img id="10-3img" src="" width="17">
+            <img id="ten_three" src="" width="17">
         </label><br>
 
         <label class="answer">
             <input type="radio" id="pas" name="10">
             <span>A Passage to India</span>
-            <img id="10-4img" src="" width="17">
+            <img id="ten_four" src="" width="17">
         </label>
     </div>
 </form>
@@ -370,88 +379,12 @@
         const percent = document.getElementById("percent");
         const feedback = document.getElementById("feedback");
         const radios = document.querySelectorAll("input[type=radio]")
-        
-        const cam = document.getElementById("Cambridge");
-        const lon = document.getElementById("London");
-        const man = document.getElementById("Manchester");
-        const oxf = document.getElementById("Oxford");
-        const six = document.getElementById("60");
-        const sixs = document.getElementById("66");
-        const sev = document.getElementById("70");
-        const svnty = document.getElementById("71");
-        const king = document.getElementById("King");
-        const ox = document.getElementById("Ox");
-        const un = document.getElementById("Un");
-        const war = document.getElementById("War");
-        const geo = document.getElementById("Geo");
-        const ed = document.getElementById("Ed");
-        const hen = document.getElementById("Hen");
-        const wil = document.getElementById("Will");
-        const ang = document.getElementById("Ang");
-        const ind = document.getElementById("Ind");
-        const end = document.getElementById("End");
-        const mau = document.getElementById("Mau");
-        const bro = document.getElementById("bro");
-        const pla = document.getElementById("pla");
-        const spe = document.getElementById("spe");
-        const jou = document.getElementById("jou");
-        const lit = document.getElementById("lit");
-        const mer = document.getElementById("mer");
-        const boo = document.getElementById("boo");
-        const int = document.getElementById("int");
-        const off = document.getElementById("off");
-        const fri = document.getElementById("fri");
-        const fors = document.getElementById("for");
-        const mum = document.getElementById("mum");
-        const cla = document.getElementById("cla");
-        const lan = document.getElementById("lan");
-        const rs = document.getElementById("rs");
-        const lite = document.getElementById("lite");
-        const vie = document.getElementById("vie");
-        const maur = document.getElementById("maur");
-        const how = document.getElementById("how");
-        const pas = document.getElementById("pas");
 
-        const one_one = document.getElementById("1-1img");
-        const one_two = document.getElementById("1-2img");
-        const one_three = document.getElementById("1-3img");
-        const one_four = document.getElementById("1-4img");
-        const two_one = document.getElementById("2-1img");
-        const two_two = document.getElementById("2-2img");
-        const two_three = document.getElementById("2-3img");
-        const two_four = document.getElementById("2-4img");
-        const three_one = document.getElementById("3-1img");
-        const three_two = document.getElementById("3-2img");
-        const three_three = document.getElementById("3-3img");
-        const three_four = document.getElementById("3-4img");
-        const four_one = document.getElementById("4-1img");
-        const four_two = document.getElementById("4-2img");
-        const four_three = document.getElementById("4-3img");
-        const four_four = document.getElementById("4-4img");
-        const five_one = document.getElementById("5-1img");
-        const five_two = document.getElementById("5-2img");
-        const five_three = document.getElementById("5-3img");
-        const five_four = document.getElementById("5-4img");
-        const six_one = document.getElementById("6-1img");
-        const six_two = document.getElementById("6-2img");
-        const six_three = document.getElementById("6-3img");
-        const six_four = document.getElementById("6-4img");
-        const seven_one = document.getElementById("7-1img");
-        const seven_two = document.getElementById("7-2img");
-        const seven_three = document.getElementById("7-3img");
-        const seven_four = document.getElementById("7-4img");
-        const eight_one = document.getElementById("8-1img");
-        const eight_two = document.getElementById("8-2img");
-        const eight_three = document.getElementById("8-3img");
-        const eight_four = document.getElementById("8-4img");
-        const nine_one = document.getElementById("9-1img");
-        const nine_two = document.getElementById("9-2img");
-        const nine_three = document.getElementById("9-3img");
-        const nine_four = document.getElementById("9-4img");
-        const ten_one = document.getElementById("10-1img");
-        const ten_two = document.getElementById("10-2img");
-        const ten_three = document.getElementById("10-3img");
-        const ten_four = document.getElementById("10-4img");
+        const options = [vie, maur, how, pas, lite, rs, lan, cla, mum, fors, fri, off, int, boo, mer, lit, jou, spe, pla, bro, mau, end, ind, ang, wil, hen, ed, geo, war, un, ox, king, svnty, sev, sixs, six, oxf, man, lon, cam];
+        options.forEach(option => document.getElementById(`${option}`));
+
+        const imgs = [one_one, one_two, one_three, one_four, two_one, two_two, two_three, two_four, three_one, three_two, three_three, three_four, four_one, four_two, four_three, four_four, five_one, five_two, five_three, five_four, six_one, six_two, six_three, six_four, seven_one, seven_two, seven_three, seven_four, eight_one, eight_two, eight_three, eight_four, nine_one, nine_two, nine_three, nine_four, ten_one, ten_two, ten_three, ten_four];
+        imgs.forEach(img => document.getElementById(`${img}`));
 
         function calculateResult() {
             let total = 0;
@@ -682,15 +615,19 @@
 
             if (total >= 0) {
                 feedbackText = "Bad";
+                feedback.style.color = "rgb(255, 0, 0)";
             }
             if (total >= 3) {
                 feedbackText = "OK";
+                feedback.style.color = "rgb(255, 157, 0)";
             }
             if (total >= 6) {
                 feedbackText = "Good";
+                feedback.style.color = "rgb(212, 255, 0)";
             }
             if (total >= 9) {
                 feedbackText = "Brilliant!";
+                feedback.style.color = "rgb(0, 255, 0)";
             }
             percentage = total*10;
             result.innerText = `${total}/10`
@@ -702,4 +639,12 @@
         submit.addEventListener('click', calculateResult)
     </script>
 </body>
+<footer>
+        <div class="center">
+            <a href="index.html">
+                <button class="B">Back</button>
+            </a>
+        </div>
+        <p class="small">English Project on E.M. Forster 2026</p>
+    </footer>
 </html>
