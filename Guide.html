@@ -37,6 +37,9 @@
         opacity: 0;
         transition: opacity 0.5s ease;
         }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
         h1 {
             text-align: center;
             margin: auto;
@@ -46,6 +49,9 @@
         h2, p {
             text-align: center;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .under {
+            text-decoration: underline;
         }
         a {
             align-items: center;
@@ -102,13 +108,16 @@
             align-items: center;
             justify-content: center;
         }
+        
         img {
             margin: 1%;
         }
         table {
                 width: 92%;
                 border-collapse: separate;
-                border-spacing: 25px 10px; 
+                border-spacing: 25px 10px;
+                margin-left: 4%;
+                margin-right: 4%;
         }
         th {
                 padding: 10px;
@@ -116,12 +125,23 @@
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
         td {
-                height: fit-content;
-                text-align: center;
+                height: 3vh;
+                text-align: left;
                 vertical-align: middle;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 font-weight: bold;
                 font-size: 100%;
+        }
+        .compare {
+            color: rgb(1, 109, 94);
+        }
+        .to {
+            color: rgb(161, 65, 0)
+        }
+        ul {
+            width: 30%;
+            margin-left: 35%;
+            margin-right: 35%;
         }
     </style>
 </head>
@@ -131,108 +151,96 @@
   </div>
 
   <div id="main-content">
-    <h1><i>The Machine Stops</i> compared to <i>1984</i></h1><br>
+    <h1 class="to"><i>The Machine Stops</i> compared to <i>1984</i></h1><br><br>
+    <h2>Similarities</h2>
+    <ul style="list-style-type:square;">
+        <b>
+            <li>Both dystopian texts</li>
+            <li>People rarely meet up in person</li>
+            <li>Barely any freedom</li>
+            <li>Lots of technology</li>
+            <li>One person disobeys the rules</li>
+            <li>End with the protaganist being defeated</li>
+            <li>Misinformation</li>
+        </b>
+    </ul>
+    <br><br>
     <table>
         <thead>
             <tr>
-                <th></th>
-                <th>Similarities</th>
-                <th colspan="2">Differences</th>
+                <th colspan="2"><h2>Differences</h2></th>
             </tr>
-            <tr>
-                <th></th>
-                <th></th>
+            <tr class="under">
                 <th>1984</th>
                 <th>The Machine Stops</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>1.</td>
-                <td>Both dystopian texts</td>
                 <td>People are controlled through fear</td>
                 <td>People treat the Machine as a god and do not say anything bad about it</td>
             </tr>
             <tr>
-                <td>2.</td>
-                <td>People rarely meet up in person</td>
                 <td>Winston rarely talks to anyone</td>
                 <td>Vashti talks to people through the Machine</td>
             </tr>
             <tr>
-                <td>3.</td>
-                <td>Barely any freedom</td>
                 <td>People are watched by the Party 24/7 through telescreens</td>
                 <td>People obey the Machine's traditions</td>
             </tr>
             <tr>
-                <td>4.</td>
-                <td>Lots of technology</td>
                 <td>Telescreens to spread propoganda and to watch peole</td>
                 <td>The Machine keeps everyone alive</td>
             </tr>
             <tr>
-                <td>5.</td>
-                <td>One person disobeys the rules</td>
                 <td>Winston has a relationship that he was not allowed to have</td>
                 <td>Kuno goes on the surface through an air vent, not the usual exit</td>
             </tr>
             <tr>
-                <td>6.</td>
-                <td>End with the protaganist being defeated</td>
                 <td>Winston gives in and obeys the Party</td>
                 <td>Kuno and everyone else is killed when the Machine breaks</td>
             </tr>
             <tr>
-                <td>7.</td>
-                <td>Misinformation</td>
                 <td>The Party change the past</td>
                 <td>Basically all information is passed down from lectures and no one collects any information on their own</td>
             </tr>
         </tbody>
     </table><br><br>
-    <h1><i>The Machine Stops</i> compared to modern day life</h1>
+    
+    <h1 class="compare"><i>The Machine Stops</i> compared to modern day life</h1>
     <table>
         <thead>
             <tr>
-                <th></th>
-                <th><i>The Machine Stops</i></th>
-                <th>Modern day life</th>
+                <th><h2>The Machine Stops</h2></th>
+                <th><h2>Modern day life</h2></th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>1.</td>
                 <td>People communicate through video calls on a round plate</td>
                 <td>People communicate through video calls on phones</td>
             </tr>
             <tr>
-                <td>2.</td>
                 <td>People can stop incoming calls by "isolating" themselves</td>
                 <td>People can put phones on <i>Do not disturb</i> mode</td>
             </tr>
             <tr>
-                <td>3.</td>
                 <td>People use the Machine for everything</td>
                 <td>People use phones, iPads, laptops and more for everyday life</td>
             </tr>
             <tr>
-                <td>4.</td>
                 <td>People do not question information</td>
                 <td>There is fake information online but most information is reliable and people check info</td>
             </tr>
             <tr>
-                <td>5.</td>
                 <td>People rarely leave the rooms</td>
                 <td>People can stay indoors if they want to because of food delivery, internet calls etc.</td>
             </tr>
             <tr>
-                <td>6.</td>
                 <td>People do not know how to survive without the Machine</td>
                 <td>People use a lot of technology which they do not understand but it is possible to live without technology</td>
             </tr>
             <tr>
-                <td>7.</td>
                 <td>People rarely meet in person</td>
                 <td>People frequently meet in person, often in groups</td>
             </tr>
