@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The Machine Stops Comparison</title>
+      <link rel="icon" type="image/png" href="Logo.png">
+  </head>
+  <body>
+    <style>
+        #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #121212;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+        .spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #333;
+        border-top: 5px solid #007bff;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        }
+        #main-content {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        }
+        h1 {
+            text-align: center;
+            margin: auto;
+            height: 1%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h2, p {
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        a {
+            align-items: center;
+            margin: 4%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(0, 196, 236);
+            text-decoration: none;
+        }
+        p {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        button {
+            border: 5px;
+            border-radius: 35px;
+            padding: 5%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 45px;
+            margin: 0;
+            cursor: pointer;
+        }
+        button:active {
+            transform: scale(1.05);
+            transition: 100ms ease-in-out;
+        }
+        .C {
+            background-color:rgb(149, 0, 255);
+                font-size: 25px;
+                padding: 10%;
+        }
+        .C:active {
+            background-color: rgb(106, 0, 182);
+        }
+        .A {
+            background-color: rgb(255, 166, 0);
+                font-size: 25px;
+        }
+        .A:active {
+            background-color: rgb(201, 131, 0);
+        }
+        .small {
+            font-size: x-small;
+        }
+        .center {
+            text-align: center;
+        }
+        .links {
+            vertical-align: middle;
+            gap: 1%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            margin: 1%;
+        }
+        table {
+                width: 92%;
+                border-collapse: separate;
+                border-spacing: 25px 10px; 
+        }
+        th {
+                padding: 10px;
+                width: 20%;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        td {
+                height: fit-content;
+                text-align: center;
+                vertical-align: middle;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-weight: bold;
+                font-size: 100%;
+        }
+    </style>
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <div id="main-content">
+    <h1><i>The Machine Stops</i> compared to <i>1984</i></h1><br>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Similarities</th>
+                <th colspan="2">Differences</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>1984</th>
+                <th>The Machine Stops</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Both dystopian texts</td>
+                <td>People are controlled through fear</td>
+                <td>People treat the Machine as a god and do not say anything bad about it</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>People rarely meet up in person</td>
+                <td>Winston rarely talks to anyone</td>
+                <td>Vashti talks to people through the Machine</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Barely any freedom</td>
+                <td>People are watched by the Party 24/7 through telescreens</td>
+                <td>People obey the Machine's traditions</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Lots of technology</td>
+                <td>Telescreens to spread propoganda and to watch peole</td>
+                <td>The Machine keeps everyone alive</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>One person disobeys the rules</td>
+                <td>Winston has a relationship that he was not allowed to have</td>
+                <td>Kuno goes on the surface through an air vent, not the usual exit</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>End with the protaganist being defeated</td>
+                <td>Winston gives in and obeys the Party</td>
+                <td>Kuno and everyone else is killed when the Machine breaks</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Misinformation</td>
+                <td>The Party change the past</td>
+                <td>Basically all information is passed down from lectures and no one collects any information on their own</td>
+            </tr>
+        </tbody>
+    </table><br><br>
+    <h1><i>The Machine Stops</i> compared to modern day life</h1>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th><i>The Machine Stops</i></th>
+                <th>Modern day life</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>People communicate through video calls on a round plate</td>
+                <td>People communicate through video calls on phones</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>People can stop incoming calls by "isolating" themselves</td>
+                <td>People can put phones on <i>Do not disturb</i> mode</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>People use the Machine for everything</td>
+                <td>People use phones, iPads, laptops and more for everyday life</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>People do not question information</td>
+                <td>There is fake information online but most information is reliable and people check info</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>People rarely leave the rooms</td>
+                <td>People can stay indoors if they want to because of food delivery, internet calls etc.</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>People do not know how to survive without the Machine</td>
+                <td>People use a lot of technology which they do not understand but it is possible to live without technology</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>People rarely meet in person</td>
+                <td>People frequently meet in person, often in groups</td>
+            </tr>
+        </tbody>
+    </table>
+  </body>
+  <footer>
+    <div class="links">
+        <a href="index.html">
+            <button class="A">About the author</button>
+        </a>
+        <a href="Context.html">
+            <button class="C">Context</button>
+        </a>
+    </div>
+    <p class="small">English Project on E.M. Forster 2026</p>
+  </footer>
+  </div>
+
+  <script>
+    const imagesToPreload = [
+      'up-arrow.png'
+    ];
+
+    let loadedCount = 0;
+    const totalImages = imagesToPreload.length;
+    function revealSite() {
+      const loader = document.getElementById('loader');
+      const content = document.getElementById('main-content');
+      
+      loader.style.opacity = '0';
+      loader.style.visibility = 'hidden';
+      content.style.opacity = '1';
+    }
+    if (totalImages === 0) {
+      revealSite();
+    } else {
+      imagesToPreload.forEach(url => {
+        const img = new Image();
+        img.onload = handleImageLoad;
+        img.onerror = handleImageLoad; 
+        
+        img.src = url;
+      });
+    }
+    function handleImageLoad() {
+      loadedCount++;
+      if (loadedCount === totalImages) {
+        revealSite();
+      }
+    }
+  </script>
+</html>
